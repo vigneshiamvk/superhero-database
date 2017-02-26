@@ -1,0 +1,17 @@
+<h2>Edit superhero!</h2>
+
+<div class="row">
+
+  {{#hero-item-form item=model}}
+  <br>
+  {{/hero-item-form}}
+
+  <br>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default" {{action 'saveHero' model}}>Save Changes</button>
+    </div>
+  </div>
+
+</div>

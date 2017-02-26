@@ -1,0 +1,17 @@
+<div class="panel panel-default hero-item">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{item.name}}</h3>
+    </div>
+    <div class="panel-body">
+      <p>Alter-ego: {{item.alterego}}</p>
+      <p>Universe: {{item.universe}}</p>
+      <p>Gender: {{item.gender}}</p>
+      <a href="#" class="thumbnail">
+        <img src={{item.imageurl}}>
+      </a>
+    </div>
+
+    <div class="panel-footer text-right">
+          {{yield}}
+    </div>
+</div>

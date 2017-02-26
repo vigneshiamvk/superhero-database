@@ -6,6 +6,16 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+
+    firebase: {
+      apiKey: 'AIzaSyB7lRQ7MGQ9WWl1R0VWGDmsbNHrsnZm2i0',
+      authDomain: 'superhero-database-6877e.firebaseapp.com',
+      databaseURL: 'https://superhero-database-6877e.firebaseio.com',
+      storageBucket: 'superhero-database-6877e.appspot.com',
+      messagingSenderId: '105833656814'
+    },
+
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -25,10 +35,10 @@ module.exports = function(environment) {
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
-    // ENV.APP.LOG_ACTIVE_GENERATION = true;
-    // ENV.APP.LOG_TRANSITIONS = true;
-    // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-    // ENV.APP.LOG_VIEW_LOOKUPS = true;
+     ENV.APP.LOG_ACTIVE_GENERATION = true;
+     ENV.APP.LOG_TRANSITIONS = true;
+     ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
+     ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
   if (environment === 'test') {
